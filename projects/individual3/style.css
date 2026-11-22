@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700&display=swap');
+
+.home-page {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F4F6;
+}
+
+.navbar {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    padding: 40px 0;
+    text-align: right;
+    z-index: 10;
+}
+
+.brand-name {
+    position: absolute;
+    left: 0; 
+    margin: 0px;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.75rem;
+    color:#F3F4F6; 
+}
+
+.navbar a {
+    display: inline-block;
+    color: #F3F4F6;
+    text-decoration: none;
+    margin: 0px 60px;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menu-toggle, 
+.hamburger {
+    display: none;
+}
+
+.header-container {
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+}
+
+.home-header-text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Bodoni Moda', serif;
+    font-size: 6rem;
+    color: #F3F4F6;
+    max-width: 800px;
+    line-height: 2;
+}
+
+.header-img {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.body-content {
+    background-color: #F3F4F6;
+}
+
+.description {
+    margin: 0 120px;
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+    padding: 80px 0;
+    color: #39190D;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.heading {
+    margin: -20px 60px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #231410;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3rem;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px auto;
+    padding: 0 40px;
+    margin-bottom: 60px;
+}
+
+.menu-item {
+    text-align: center;
+    position: relative;
+}
+
+.food-img {
+    width: auto;
+    height: 600px;
+    display: block;
+    z-index: 0;
+}
+
+.menu-item h3 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    color: #F3F4F6;
+    margin: 0;
+    text-align: right;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu-item p {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px 40px;
+    background-color: #3d535c;
+    margin-top: 120px;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.75rem;
+    padding: -20px 0;
+    margin-bottom: 15px;
+    color: #F3F4F6;
+}
+
+.footer-section p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: lighter;
+    margin: 5px 0;
+    color: #F3F4F6;
+}
+
+.phone-content {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .header-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-header-text {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Bodoni Moda', serif;
+        font-size: 4rem;
+        color: #F3F4F6;
+        max-width: 800px;
+        line-height: 2;
+    }
+
+    .navbar {
+        padding: 25px 0;
+    }
+
+    .navbar a {
+        margin: 0 25px;
+    }
+
+    .description {
+        margin: 0 40px;
+        font-size: 1rem;
+        padding: 80px 0;
+        text-align: left;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        text-align: left;
+        margin-left: 40px;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 40px;
+    }
+
+    .menu-item {
+        display: flex;
+        text-align: left;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .food-img {
+        width: 220px;
+        height: auto;
+    }
+
+    .menu-text {
+        flex: 1;
+    }
+
+    .menu-item h3{
+        position: static;
+        color: #231410;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 10px;
+        padding: 20px 0 0;
+        text-shadow: none;
+    }
+
+    .menu-item p {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        color: #39190D;
+        font-size: 1rem;
+        font-weight: lighter;
+        margin: 0;
+    }
+
+    .footer {
+        margin-top: 60px;
+        padding: 10px 40px 40px;
+    }
+
+    .footer-section h3 {
+    font-size: 1.5rem;
+    padding: -20px 0;
+}
+
+.footer-section p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: lighter;
+}
+
+    .location-section {
+        display: none;
+    }
+
+    .phone-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+ 
+    .header-container,
+    .body-content,
+    .footer {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #3D535C;
+        box-sizing: border-box;
+    }
+
+    .navbar > .brand-name {
+        position: static;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+    .hamburger span {
+        width: 25px;
+        height: 2px;
+        background-color: #F3F4F6;
+    }
+
+    .navbar nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #3D535C;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+        z-index: 10;
+    }
+
+    .navbar nav a {
+        margin: 10px 0;
+    }
+
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+
+    .phone-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: #F3F4F6;
+        text-align: center;
+    }
+
+    .phone-content h2 {
+        font-family: 'Bodoni Moda', serif;
+        font-size: 2rem;
+        color: #231410;
+    }
+
+    .phone-content p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+        color: #39190D;
+        line-height: 1.5;
+        padding: 0 20px;
+    }
+
+    .map-img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+.project-nav {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #a16f72;
+    color: #F7F5F2;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #393333;
+}

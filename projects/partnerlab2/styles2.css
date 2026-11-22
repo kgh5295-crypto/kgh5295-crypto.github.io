@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ede4f7;
+    color: #232323;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #181619;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#nameInput, #messageInput, #options {
+    padding: 12px 30px;
+    margin: 10px;
+    width: 250px;
+    max-width: 80%;
+    box-sizing: border-box;
+    border: 1px solid #837b8a;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+#submitButton {
+    padding: 12px 30px;
+    margin: 10px;
+    width: 250px;
+    max-width: 80%;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid #837b8a;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: #a398aa;
+}
+
+.project-nav {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #a16f72;
+    color: #F7F5F2;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #393333;
+}

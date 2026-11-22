@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Nunito:wght@400;500;600;700&display=swap');
+
+.home-page {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: absolute;
+    margin: 0px;
+    width: 100%;
+    padding: 40px 0;
+    text-align: right;
+    z-index: 10;
+}
+
+.brand-name {
+    position: absolute;
+    left: 60px; 
+    margin: 0px;
+
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.5rem;
+    color:rgb(77, 2, 2); 
+}
+
+.navbar a {
+    display: inline-block;
+    margin-left: 60px;
+    color: rgb(77, 2, 2);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px 60px;
+    font-size: 1rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.header-container {
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+}
+
+.home-header-text {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+
+    font-family: 'Righteous', sans-serif;
+    font-kerning: .5rem;
+    font-size: 4rem;
+    color: #ffffff;
+    max-width: 800px;
+    line-height: 2;
+}
+
+.header-image {
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.featured-section {
+    padding: 60px;
+    box-sizing: border-box;
+    background: #fffbf7; 
+}
+
+.featured-section h2, .inventory-section h2 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 2.5rem;
+    color:rgb(77, 2, 2); 
+}
+
+.album-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    padding-top: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.album {
+    position: relative;
+    top: 0;
+    width: 200px;
+    text-align: center;
+    z-index: 1;
+    transition: top 0.3s ease;
+}
+
+.album:hover {
+    top: 20px;
+    z-index: 2;
+}
+
+.album-img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 2px 4px 8px rgb(111, 103, 95);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.album:hover .album-img {
+    width: 200px;
+    height: 200px;
+}
+
+.album h3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+    margin: 15px 0 5px;
+    font-weight: bold;
+}
+
+.album p {
+    font-family: 'Nunito', sans-serif;
+    margin: 5px 0;
+}
+
+.inventory-section {
+    padding: 60px 60px;
+    background-color: #fffbf7;
+}
+
+.inventory-table {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 150px;
+}
+
+.inventory-table th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(77, 2, 2, 0.2);
+}
+
+.inventory-table td {
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(77, 2, 2, 0.2);
+}
+
+.inventory-table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 245, 236, 0.8);
+}
+
+.about-page {
+    margin: 0;
+    background: #fffbf7;
+}
+
+.about-section {
+    padding: 100px 60px 60px;
+    box-sizing: border-box;
+    background: #fffbf7;
+    margin-bottom: 150px;
+}
+
+.about-section h2 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color:rgb(77, 2, 2);
+}
+
+.about-content h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 30px;
+
+}
+
+.about-content p {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+.about-img {
+    float: left;
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    box-shadow: 2px 4px 8px rgb(111, 103, 95);
+}
+
+.about-date {
+    position: absolute;
+    top: 150px;
+    right: 60px;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.8rem;
+}
+
+.footer {
+    background: rgb(77, 2, 2);
+    color: #fffbf7;
+    padding: 10px 60px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+}
+
+.footer h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: .9rem;
+}
+
+.project-nav {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #a16f72;
+    color: #F7F5F2;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #393333;
+}
